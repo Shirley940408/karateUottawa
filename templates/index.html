@@ -10,6 +10,8 @@
     <!-- Google font -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <title>Hello, world!</title>
   </head>
 <style>
@@ -31,32 +33,44 @@
     .upper{
         font-family: 'Lato', sans-serif;
     }
+    .under{
+        background-color:#ffe470;
+        font-family: 'Lato', sans-serif;
+        color:#393836;
+    }
+    #map{
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        }
 </style>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Shotokan Karate Ottawa</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">who we are</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Instructors</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Beginners Training</a>
-            </li>
-          </ul>
-        </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="#">Shotokan Karate Ottawa</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">who we are</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Instructors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Beginners Training</a>
+                </li>
+                </ul>
+            </div>
     </nav>
-    <div class="container-fluid p-0 position-relative" id="banner">
+
+    <div class="container-fluid px-0 mt-5 position-relative" id="banner">
         <div style="background-color:#474747;opacity: 0.5;height:100vh;"></div>
         <div class="container-fluid text-white text-center position-absolute" style="top:0;">
             <div class="row align-items-center" style="height:100vh;">
@@ -108,11 +122,61 @@
        </div>
     </div>
 
+    <div class="container-fluid under p-4">
+        <div class="row text-center align-items-center p-3">
+            <div class="col-10 mx-auto">
+                <i class="fab fa-telegram-plane display-4"></i>
+                <h2 class="p-4">Learning is never too late</h2>
+                <p class="pb-1"> It is never too late in the semester to register and start practicing, because we train 12 months of the year.</p>
+                <button type="button" class="btn btn-light py-2 my-3" style="border-radius:0;"><i class="fas fa-angle-right pr-3" style="color:grey;"></i>JION US</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid bg-dark text-white px-5">
+        <div class="row p-5">
+            <div class="col-10 mx-auto">
+                <div class="row">
+                    <div class="col-lg-6 pr-5">
+                        <div id="map"></div>
+                    </div>
+                    <div class="col-lg-4 pt-5">
+                        <h3 class="mb-5"><span><i class="fas fa-hand-point-right text-warning pr-3"></i></span>Contact Us</h3>
+                        <p>
+                            125 University Private, Ottawa, ON K1N 1A2
+                        </p>
+                        <p>
+                            located in University of Ottawa
+                        </p>
+                        <p>
+                            Phone: (613) 562-5700
+                        </p>
+                    </div>
+                    <div class="col-lg-2 text-center pt-3">
+                            <img src="./img/icon.png" class="w-100">
+                            <h5 class="mt-2">Shotokan Karate Ottawa</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script>
+            var map;
+            function initMap() {
+              map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: 45.422778, lng: -75.682333},
+                zoom: 18
+              });
+            }
+    </script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4s-xUyZUtOZHxreEyx_Q6Q6es0fDUgtA&callback=initMap"
+async defer></script>
   </body>
 </html>
