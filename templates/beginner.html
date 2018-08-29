@@ -1,6 +1,125 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="container-fluid mt-5 pt-2 bigPic">
-<h1>Hello World</h1>
+<style>
+.bigPic{
+    background-image:url(./img/mountain.webp);
+    background-size:cover;
+    background-position:center center;
+    background-attachment: scroll;
+
+}
+span{
+    font-weight: bolder;
+}
+p.timeline{
+    font-size:19px;
+}
+
+</style>
+<div class="container-fluid mt-5 px-0 pt-2 bigPic text-white display-5 upper">
+    <div style="background-color:#474747;opacity: 0.7;">
+        <div class="container-fluid">
+                <div class="row text-center py-3">
+                    <div class="col py-2">
+                        <h2><b>Timetable for Beginners</b></h2>                       
+                    </div>
+                </div>
+                <div class="timeline row">
+                    <p class="timeline">
+                        <span>week01 Introduction</span><br>
+                        front stance, front kick, front punch, down block
+                    </p>
+                    <p class="timeline">
+                        <span>week02 Punches & Blocks</span><br>
+                        front stance, front kick, front punch, down block
+                    </p>
+                    <p class="timeline">
+                        <span>week03 Punches & Blocks</span><br>
+                        front stance, outside middle block, reverse punch, side upkick
+                    </p>    
+                    <p class="timeline">
+                        <span>week04 Punches & Blocks</span><br>
+                        front stance, inside middle block, reverse punch, side thrust
+                    </p>  
+                    <p class="timeline">
+                        <span>week05 Sanbon kumite</span><br>
+                        back stance, knife hand block, front punch, roundhouse kick
+                    </p>
+                    <p class="timeline">
+                        <span>week06 Sanbon kumite</span><br>
+                        horse stance, block and front punch review, block and front punch combinations
+                    </p>
+                    <p class="timeline">
+                        <span>week07 Sanbon kumite</span><br>
+                        block and reverse punch review, block and reverse punch combinations
+                    </p>
+                    <p class="timeline">
+                        <span>week08 Sanbon kumite</span><br>
+                        block and kick review, block and kick combinations
+                    </p>
+                    <p class="timeline">
+                        <span>week09&10 Sanbon kumite</span><br>
+                        review & prepare for test
+                    </p>    
+                </div>
+        </div>
+    </div>
 </div>
+<div class="container-fluid my-5">
+    <div class="row text-center mt-5 mb-3">
+        <div class="col">
+            <h3>The semester fees</h3>
+            <p>Prices do not include applicable taxes</p>   
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-10 mx-auto">
+            <div class="row">
+
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Non-students</h5>
+                            <p class="card-text">Non-students,
+                                    Non-members</p>
+                            <div class="btn btn-dark">$125</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Full-Time uOttawa Students</h5>
+                            <p class="card-text">
+                                    Full-Time uOttawa Students</p>
+                            <div class="btn btn-dark">$65</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">uOttawa Staff</h5>
+                            <p class="card-text">uOttawa Staff
+                                    uOttawa Sports Service members</p>
+                            <div class="btn btn-dark">$85</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid under p-4">
+        <div class="row text-center align-items-center p-3">
+            <div class="col-10 mx-auto">
+                <a href="https://www.facebook.com/groups/UPPERCANADA.SHOTOKANKARATE/"><i class="fab fa-facebook-square text-info display-4 shadow-lg rounded"></i></a> 
+                <h2 class="p-4"><b>Join Us on facebook</b></h2>
+               <p>For more information, please visit <a href="http://www.canadashotokan.org/en/" class="text-info"><b> Canada Shotokan </b></a> && <a href="http://ska.org/" class="text-info"> <b>Shotokan Karate of America</b> </a></p>
+            </div>
+        </div>
+    </div>
 {% endblock %}
