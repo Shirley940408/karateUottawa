@@ -163,13 +163,16 @@
     
     
     <script>
-            var map;
-            function initMap() {
-              map = new google.maps.Map(document.getElementById('map'), {
-                center: {lat: 45.422778, lng: -75.682333},
-                zoom: 18
-              });
-            }
+        var map;
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 45.422778, lng: -75.682333},
+            zoom: 18
+            });
+        }
+    </script>
+    <script>
+        new WOW().init();
     </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4s-xUyZUtOZHxreEyx_Q6Q6es0fDUgtA&callback=initMap"
 async defer></script>
