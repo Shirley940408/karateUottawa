@@ -1,5 +1,15 @@
 {% extends "base.html" %}
 {% block content %}
+<style>
+    .symbol{
+        top:35vh;margin:-50px;  
+    }
+    @media screen and (max-width: 400px) { /*当屏幕尺寸小于400px时，应用下面的CSS样式*/  
+        .symbol {  
+            top:70vh;margin:-50px;   
+        }  
+    }  
+</style>
     <div class="container-fluid px-0 mt-5 pt-2 position-relative" id="banner">
         <div style="background-color:#474747;opacity: 0.5;height:100vh;"></div>
         <div class="container-fluid text-white text-center position-absolute" style="top:0;">
@@ -7,6 +17,7 @@
                 <div class="col-lg-6  mx-auto">
                     <h1>Authentic, Traditional Karate<br>
                         for the Mind, Body & Spirit</h1>
+                    <img class="position-absolute symbol" src="./img/icon.png" width="100" >
                 </div>
             </div>
         </div>   
