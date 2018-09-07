@@ -131,10 +131,10 @@
                     <div class="col-lg-4 pt-5">
                         <h3 class="mb-5"><span><i class="fas fa-hand-point-right yellow-text pr-3"></i></span>Contact Us</h3>
                         <p>
-                           summer location: 125 University Private, Ottawa, ON K1N 1A2
+                           summer location: Room 104 Dance Studio, 125 University Private, Ottawa, ON K1N 1A2
                         </p>
                         <p>
-                           winter & fall location: 200 lees avenue, Ottawa, ON K1N 6N5
+                           fall & winter location: East Gym, 200 lees avenue, Ottawa, ON K1N 6N5
                         </p>
                         <p>
                             located in University of Ottawa
@@ -170,9 +170,16 @@
     
     <script>
         var map;
+        var dateObj=new Date(); 
+        var month=dateObj.getMonth();
+        if(Math.ceil((month+1)/4)==2){
+        var point={lat: 45.422778, lng: -75.682333};
+        }else{
+        var point={lat: 45.4166985,lng: -75.6668752};
+        }
         function initMap() {
             map = new google.maps.Map(document.getElementById('map'), {
-            center: {lat: 45.422778, lng: -75.682333},
+            center: point,
             zoom: 18
             });
         }
